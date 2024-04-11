@@ -55,32 +55,32 @@ const LoversPage = async (
       </div>
       <div class="columns">
         <div class="column column-reverse">
-          {secondPart.map((lover) => (
+          {secondPart.map((lover, n) => (
             <Lover
               image={(lover as any).foto
                 ? (lover as LoverT).foto
                 : (lover as PokemonT).imagen}
-              key={lover._id}
+              key={n}
             />
           ))}
         </div>
         <div class="column">
-          {firstPart.map((lover) => (
+          {firstPart.map((lover, n) => (
             <Lover
               image={(lover as any).foto
                 ? (lover as LoverT).foto
                 : (lover as PokemonT).imagen}
-              key={lover._id}
+              key={n}
             />
           ))}
         </div>
         <div class="column column-reverse">
-          {thirdPart.map((lover) => (
+          {thirdPart.map((lover, n) => (
             <Lover
               image={(lover as any).foto
                 ? (lover as LoverT).foto
                 : (lover as PokemonT).imagen}
-              key={lover._id}
+              key={n}
             />
           ))}
         </div>

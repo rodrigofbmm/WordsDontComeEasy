@@ -1,4 +1,4 @@
-import Start from "../components/start.tsx";
+import Start from "../islands/start.tsx";
 
 export type Tpokemon = {
   _id: string;
